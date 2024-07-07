@@ -26,11 +26,15 @@ class Assets {
   static const String iconsActiveTrash = 'assets/icons/activeTrash.svg';
   static const String iconsActiveUser = 'assets/icons/activeUser.svg';
   static const String iconsCalendar = 'assets/icons/Calendar.svg';
+  static const String iconsCheckCircleBlack = 'assets/icons/check_circle_black.svg';
+  static const String iconsCheckCircleGrey = 'assets/icons/check_circle_grey.svg';
   static const String iconsFilter = 'assets/icons/Filter.svg';
   static const String iconsHome = 'assets/icons/Home.svg';
   static const String iconsLineArrowRight = 'assets/icons/lineArrowRight.svg';
+  static const String iconsLoginArrowDown = 'assets/icons/login_arrow_down.svg';
   static const String iconsPhone = 'assets/icons/Phone.svg';
   static const String iconsQuestion = 'assets/icons/question.svg';
+  static const String iconsRegisterUser = 'assets/icons/register_user.svg';
   static const String iconsRussia = 'assets/icons/russia.svg';
   static const String iconsSearchZoomIn = 'assets/icons/search-zoom-in.svg';
   static const String iconsTelegram = 'assets/icons/telegram.svg';

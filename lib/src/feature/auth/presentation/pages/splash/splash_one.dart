@@ -1,9 +1,9 @@
 import "package:flutter/material.dart";
 import "package:flutter_screenutil/flutter_screenutil.dart";
 
-import "../../../../../generated/assets.dart";
-import "../../../../common/widget/app_material_context.dart";
-import "../../../main/presentation/widget/language_picker/custom_language_picker_widget.dart";
+import "../../../../../../generated/assets.dart";
+import "../../../../../common/widget/app_material_context.dart";
+import "../../../../main/presentation/widget/language_picker/custom_language_picker_widget.dart";
 
 class SplashOne extends StatelessWidget {
   const SplashOne({super.key});

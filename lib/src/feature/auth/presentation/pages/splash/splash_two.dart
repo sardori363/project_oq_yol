@@ -1,16 +1,17 @@
 import "package:flutter/material.dart";
 import "package:flutter_riverpod/flutter_riverpod.dart";
 import "package:flutter_screenutil/flutter_screenutil.dart";
-import "../../../../../generated/assets.dart";
-import "../../../../common/styles/app_colors.dart";
-import "../../view_model/splash_provider.dart";
+
+import "../../../../../../generated/assets.dart";
+import "../../../../../common/styles/app_colors.dart";
+import "../../../view_model/splash_provider.dart";
 
 class SplashTwo extends ConsumerWidget {
   const SplashTwo({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    ref.read(splashProvider); // Trigger the splashProvider to start the delay and navigation
+    ref.read(splashProvider);
 
     return Scaffold(
       body: Container(

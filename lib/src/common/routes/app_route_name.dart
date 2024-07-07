@@ -23,4 +23,8 @@ final class AppRouteName {
   // Auth
   static const String splash_one = "/splash_one";
   static const String splash_two = "/splash_two";
+
+  static const String login_page = "/login";
+  static const String register_page = "/register";
+  static const String register_auth = "/register_auth";
 }

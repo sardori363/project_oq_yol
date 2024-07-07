@@ -10,6 +10,8 @@ final Provider<GoRouter> navigationProvider = Provider<GoRouter>((ProviderRef<Go
 
 final Provider<void> splashProvider = Provider<void>((ProviderRef<void> ref) {
   Future.delayed(const Duration(seconds: 3), () {
-    ref.read(navigationProvider).go(AppRouteName.homePage); // Use the navigation provider
+    ref.read(navigationProvider).go(AppRouteName.login_page); // Use the navigation provider
   });
 });
+
+final Provider<bool> passwordVisibleProvider = Provider<bool>((ProviderRef<bool> ref) => false);
