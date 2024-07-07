@@ -8,4 +8,9 @@ final class AppRouteName {
 
   // home
   static const String homePage = "/";
+  static const String plans = "/qatnovlar";
+
+  // Auth
+  static const String splash_one = "/splash_one";
+  static const String splash_two = "/splash_two";
 }
