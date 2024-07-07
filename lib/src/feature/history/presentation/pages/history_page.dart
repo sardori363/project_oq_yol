@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 
-class ProfilePage extends StatelessWidget {
-  const ProfilePage({super.key});
+class HistoryPage extends StatelessWidget {
+  const HistoryPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class ProfilePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "Profile Page",
+          "History Page",
           style: Theme.of(context)
               .textTheme
               .titleMedium

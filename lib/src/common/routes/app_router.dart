@@ -3,10 +3,12 @@ import "package:go_router/go_router.dart";
 
 import "../../feature/auth/presentation/pages/splash_one.dart";
 import "../../feature/auth/presentation/pages/splash_two.dart";
+import "../../feature/history/presentation/pages/history_page.dart";
 import "../../feature/home/presentation/pages/home_page.dart";
 import "../../feature/main/presentation/pages/main_page.dart";
+import "../../feature/profile/presentation/pages/profile_page.dart";
+import "../../feature/schedule/presentation/pages/schedule_page.dart";
 import "app_route_name.dart";
-
 
 @immutable
 class AppRouter {
@@ -27,7 +29,8 @@ class AppRouter {
         builder: (BuildContext context, GoRouterState state) {
           return const SplashOne();
         },
-      ),GoRoute(
+      ),
+      GoRoute(
         name: "splash_two",
         path: AppRouteName.splash_two,
         builder: (BuildContext context, GoRouterState state) {
@@ -58,6 +61,27 @@ class AppRouter {
               //   },
               // ),
             ],
+          ),
+          GoRoute(
+            name: "SchedulePage",
+            path: AppRouteName.schedulePage,
+            builder: (BuildContext context, GoRouterState state) {
+              return const SchedulePage();
+            },
+          ),
+          GoRoute(
+            name: "HistoryPage",
+            path: AppRouteName.historyPage,
+            builder: (BuildContext context, GoRouterState state) {
+              return const HistoryPage();
+            },
+          ),
+          GoRoute(
+            name: "ProfilePage",
+            path: AppRouteName.profilePage,
+            builder: (BuildContext context, GoRouterState state) {
+              return const ProfilePage();
+            },
           ),
         ],
       ),
