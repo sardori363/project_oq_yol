@@ -15,4 +15,5 @@ final class AppColors {
   static const Color tgBlue = Color(0xFF24A1DE);
   static const Color yellow = Color(0xFFFFC538);
   static const Color red = Color(0xFFFF0000);
+  static const Color cardLine = Color(0xFFE3E3E3);
 }
