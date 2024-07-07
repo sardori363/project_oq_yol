@@ -32,9 +32,6 @@ class Assets {
   static const String iconsPhone = 'assets/icons/Phone.svg';
   static const String iconsQuestion = 'assets/icons/question.svg';
   static const String iconsRussia = 'assets/icons/russia.svg';
-  static const String iconsLineArrowRight = 'assets/icons/lineArrowRight.svg';
-  static const String iconsPhone = 'assets/icons/Phone.svg';
-  static const String iconsQuestion = 'assets/icons/question.svg';
   static const String iconsSearchZoomIn = 'assets/icons/search-zoom-in.svg';
   static const String iconsTelegram = 'assets/icons/telegram.svg';
   static const String iconsTrash = 'assets/icons/Trash.svg';
