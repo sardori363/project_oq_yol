@@ -33,7 +33,8 @@ class Assets {
   static const String iconsTrash = 'assets/icons/Trash.svg';
   static const String iconsUZB = 'assets/icons/UZB.svg';
   static const String iconsUser = 'assets/icons/User.svg';
-  static const String imagesLogo = 'assets/images/logo.svg';
   static const String imagesLogonew = 'assets/images/logonew.png';
+  static const String imagesTaxiBg = 'assets/images/taxi_bg.png';
+  static const String imagesTaxiSplash = 'assets/images/taxi_splash.png';
 
 }
