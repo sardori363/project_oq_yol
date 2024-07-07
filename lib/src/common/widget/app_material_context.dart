@@ -29,7 +29,7 @@ class MaterialContext extends StatelessWidget {
       child: Builder(
         builder: (BuildContext context) {
           return MaterialApp.router(
-            onGenerateTitle: (BuildContext context) => "PDP Invest",
+            onGenerateTitle: (BuildContext context) => "Oq Yo'l",
             routerConfig: AppRouter.router,
             restorationScopeId: "material_app",
             debugShowCheckedModeBanner: false,

@@ -28,11 +28,11 @@ class CustomEachLanguagePickerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       shape:
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r), side: BorderSide(color: selected ? Colors.green : Colors.white)),
+          RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r), side: BorderSide(color: selected ? Colors.blue : Colors.white)),
       clipBehavior: Clip.hardEdge,
       elevation: 0,
-      surfaceTintColor: context.theme.colorScheme.secondaryContainer,
-      color: context.theme.colorScheme.secondaryContainer,
+      surfaceTintColor: context.theme.colorScheme.onPrimary,
+      color: context.theme.colorScheme.onPrimary,
       child: ListTile(
         focusColor: AppColors.red,
         selectedTileColor: AppColors.red,
@@ -45,7 +45,7 @@ class CustomEachLanguagePickerWidget extends StatelessWidget {
             decoration: BoxDecoration(color: context.theme.colorScheme.background, borderRadius: BorderRadius.circular(8.r)),
             child: SvgPicture.asset(countryFlag, fit: BoxFit.fill)),
         trailing: Icon(selected ? Icons.check_circle_outline_outlined : Icons.radio_button_checked_sharp,
-            color: selected ? AppColors.yellow : AppColors.yellow),
+            color: selected ? AppColors.green : AppColors.greyText),
       ),
     );
   }
