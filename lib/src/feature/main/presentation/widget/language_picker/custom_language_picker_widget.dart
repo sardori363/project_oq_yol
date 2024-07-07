@@ -37,7 +37,7 @@ class CustomLanguagePickerWidget extends StatelessWidget {
           },
           language: "O'zbekcha",
           selected: localController.selectedLanguage == "uz",
-          countryFlag: Assets.imagesUzbFlag,
+          countryFlag: Assets.iconsActiveUser,
         ),
         CustomEachLanguagePickerWidget(
           context: context,
@@ -51,7 +51,7 @@ class CustomLanguagePickerWidget extends StatelessWidget {
           },
           language: "Русский",
           selected: localController.selectedLanguage == "ru",
-          countryFlag: Assets.imagesRusFlag,
+          countryFlag: Assets.iconsActiveUser,
         ),
         CustomEachLanguagePickerWidget(
           context: context,
@@ -65,7 +65,7 @@ class CustomLanguagePickerWidget extends StatelessWidget {
           },
           language: "English",
           selected: localController.selectedLanguage == "en",
-          countryFlag: Assets.imagesEnFlag,
+          countryFlag: Assets.iconsActiveUser,
         ),
       ],
     );

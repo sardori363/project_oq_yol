@@ -12,8 +12,8 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w500,
         fontSize: FontSize.size16,
         letterSpacing: 0.1,
-        color: AppColors.l16161B,
-        fontFamily: "SF-Pro",
+        color: AppColors.black,
+        fontFamily: "Poppins",
       );
 
   @override
@@ -21,7 +21,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w400,
         fontSize: FontSize.size14,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
@@ -29,7 +29,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w400,
         fontSize: FontSize.size6_4,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
@@ -37,7 +37,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w600,
         fontSize: FontSize.size62,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
@@ -45,14 +45,14 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w600,
         fontSize: FontSize.size42,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
   TextStyle? get displaySmall => TextStyle(
         fontWeight: FontWeight.w400,
         fontSize: FontSize.size32,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
         color: AppColors.black,
       );
 
@@ -61,7 +61,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w600,
         fontSize: FontSize.size32,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
@@ -69,7 +69,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w600,
         fontSize: FontSize.size26,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
@@ -77,7 +77,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w500,
         fontSize: FontSize.size24,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
@@ -85,7 +85,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w700,
         fontSize: FontSize.size16,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
@@ -93,7 +93,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w600,
         fontSize: FontSize.size14,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
@@ -101,7 +101,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w600,
         fontSize: FontSize.size12,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
@@ -109,7 +109,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w600,
         fontSize: FontSize.size28,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
@@ -117,7 +117,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w700,
         fontSize: FontSize.size18,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 
   @override
@@ -125,7 +125,7 @@ class AppTextStyle extends TextTheme {
         fontWeight: FontWeight.w400,
         fontSize: FontSize.size18,
         color: AppColors.black,
-        fontFamily: "SF-Pro",
+        fontFamily: "Poppins",
       );
 }
 

@@ -23,42 +23,23 @@ class MainPage extends ConsumerWidget {
         onTap: (int index) => con.changeIndex(index, context),
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: SvgPicture.asset(Assets.iconsMHome),
-            activeIcon: SvgPicture.asset(Assets.iconsMAHome),
+            icon: SvgPicture.asset(Assets.iconsHome),
+            activeIcon: SvgPicture.asset(Assets.iconsActiveHome),
             label: context.localized.bottom_nav_bar_main
           ),
           BottomNavigationBarItem(
-              icon: SvgPicture.asset(Assets.iconsMFaoliyat),
-              activeIcon: SvgPicture.asset(Assets.iconsMAFaoliyat),
-              label: context.localized.bottom_nav_bar_career
+              icon: SvgPicture.asset(Assets.iconsCalendar),
+              activeIcon: SvgPicture.asset(Assets.iconsActiveCalendar),
+              label: context.localized.bottom_nav_bar_schedule
           ),
           BottomNavigationBarItem(
-              icon: Column(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  const SizedBox(height: 10),
-                  SvgPicture.asset(Assets.iconsMAdd),
-                ],
-              ),
-              activeIcon: Column(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  const SizedBox(height: 10),
-                  SvgPicture.asset(Assets.iconsMAAdd),
-                ],
-              ),
-              label: ""
+              icon: SvgPicture.asset(Assets.iconsTrash),
+              activeIcon: SvgPicture.asset(Assets.iconsActiveTrash),
+              label: context.localized.bottom_nav_bar_history
           ),
           BottomNavigationBarItem(
-              icon: SvgPicture.asset(Assets.iconsMLoyiha),
-              activeIcon: SvgPicture.asset(Assets.iconsMALoyihalar),
-              label: context.localized.bottom_nav_bar_projects
-          ),
-          BottomNavigationBarItem(
-              icon: SvgPicture.asset(Assets.iconsMProfile),
-              activeIcon: SvgPicture.asset(Assets.iconsMAProfile),
+              icon: SvgPicture.asset(Assets.iconsUser),
+              activeIcon: SvgPicture.asset(Assets.iconsActiveUser),
               label: context.localized.bottom_nav_bar_profile
           ),
         ],

@@ -34,8 +34,8 @@ class CustomEachLanguagePickerWidget extends StatelessWidget {
       surfaceTintColor: context.theme.colorScheme.secondaryContainer,
       color: context.theme.colorScheme.secondaryContainer,
       child: ListTile(
-        focusColor: AppColors.l00CB82,
-        selectedTileColor: AppColors.l00CB82,
+        focusColor: AppColors.red,
+        selectedTileColor: AppColors.red,
         onTap: onSelect,
         title: Text(language, style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w500)
             // TextStyle(color: context.theme.colorScheme.onSecondaryContainer),
@@ -45,7 +45,7 @@ class CustomEachLanguagePickerWidget extends StatelessWidget {
             decoration: BoxDecoration(color: context.theme.colorScheme.background, borderRadius: BorderRadius.circular(8.r)),
             child: SvgPicture.asset(countryFlag, fit: BoxFit.fill)),
         trailing: Icon(selected ? Icons.check_circle_outline_outlined : Icons.radio_button_checked_sharp,
-            color: selected ? AppColors.l00CB82 : AppColors.lDFDFDF),
+            color: selected ? AppColors.yellow : AppColors.yellow),
       ),
     );
   }

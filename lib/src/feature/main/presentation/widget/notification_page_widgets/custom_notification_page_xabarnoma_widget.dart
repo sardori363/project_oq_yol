@@ -24,7 +24,7 @@ class CustomNotificationPageXabarnomaWidget extends StatelessWidget {
               borderRadius: BorderRadius.vertical(top: Radius.circular(12.r)),
               child: Image.asset(
                 fit: BoxFit.cover,
-                Assets.imagesNotificationPageDraftImage,
+                Assets.iconsActiveUser,
               )),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 8.h),
@@ -36,7 +36,7 @@ class CustomNotificationPageXabarnomaWidget extends StatelessWidget {
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                       color: context.theme.colorScheme.onSecondaryContainer,
                       fontWeight: FontWeight.w500,
-                      fontFamily: "SF-Pro",
+                      fontFamily: "Poppins",
                       fontSize: 20.sp),
                 ),
                 SizedBox(
@@ -56,7 +56,7 @@ class CustomNotificationPageXabarnomaWidget extends StatelessWidget {
                   "Eng yaxshi tilaklar bilan,\nJiemurat Aka Mambetkarimov",
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       color: context.theme.colorScheme.onSecondaryContainer,
-                      fontFamily: "SF-Pro",
+                      fontFamily: "Poppins",
                       fontSize: 18.sp,
                       fontWeight: FontWeight.w300),
                 ),
@@ -91,11 +91,11 @@ class CustomNotificationPageXabarnomaWidget extends StatelessWidget {
               borderRadius: BorderRadius.vertical(bottom: Radius.circular(12.r)),
             ),
             onTap: () {},
-            leading: SvgPicture.asset(Assets.iconsNotificationPageTelegram),
+            leading: SvgPicture.asset(Assets.iconsActiveUser),
             title: Text(
-              context.localized.go_to_telegram,
+              context.localized.bottom_nav_bar_history,
               style:
-                  Theme.of(context).textTheme.bodyMedium?.copyWith(color: const Color(0xff3190FF), fontFamily: "SF-Pro", fontSize: 18.sp),
+                  Theme.of(context).textTheme.bodyMedium?.copyWith(color: const Color(0xff3190FF), fontFamily: "Poppins", fontSize: 18.sp),
             ),
             trailing: Icon(
               size: 30.h,

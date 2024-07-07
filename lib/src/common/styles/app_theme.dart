@@ -14,18 +14,18 @@ final class AppTheme {
           brightness: Brightness.dark,
           colorScheme: darkColorScheme,
           appBarTheme: const AppBarTheme(
-            backgroundColor: AppColors.l17212B,
+            backgroundColor: AppColors.white,
           ),
           useMaterial3: true,
         ),
         lightTheme = ThemeData(
           textTheme: const AppTextStyle(),
           brightness: Brightness.light,
-          scaffoldBackgroundColor: AppColors.lF6F6F6,
+          scaffoldBackgroundColor: AppColors.white,
           appBarTheme: const AppBarTheme(
-              backgroundColor: AppColors.lF6F6F6,
+              backgroundColor: AppColors.white,
               elevation: 0,
-              surfaceTintColor: AppColors.lF6F6F6),
+              surfaceTintColor: AppColors.white),
           useMaterial3: true,
           colorScheme: lightColorScheme,
         );
@@ -37,11 +37,11 @@ final class AppTheme {
   static ThemeData light() => ThemeData(
         textTheme: const AppTextStyle(),
         brightness: Brightness.light,
-        scaffoldBackgroundColor: AppColors.lF6F6F6,
+        scaffoldBackgroundColor: AppColors.white,
         appBarTheme: const AppBarTheme(
-            backgroundColor: AppColors.lF6F6F6,
+            backgroundColor: AppColors.white,
             elevation: 0,
-            surfaceTintColor: AppColors.lF6F6F6),
+            surfaceTintColor: AppColors.white),
         useMaterial3: true,
         colorScheme: lightColorScheme,
       );
@@ -52,7 +52,7 @@ final class AppTheme {
         brightness: Brightness.dark,
         colorScheme: darkColorScheme,
         appBarTheme: const AppBarTheme(
-          backgroundColor: AppColors.l17212B,
+          backgroundColor: AppColors.white,
         ),
         useMaterial3: true,
       );

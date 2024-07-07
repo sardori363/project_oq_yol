@@ -50,7 +50,7 @@ class CustomNotificationPageNewsWidget extends StatelessWidget {
                                   ?.copyWith(
                                       color: context.theme.colorScheme.primary,
                                       fontWeight: FontWeight.w400,
-                                      fontFamily: "SF-Pro",
+                                      fontFamily: "Poppins",
                                       fontSize: 16.sp),
                             ),
                             Text(
@@ -62,7 +62,7 @@ class CustomNotificationPageNewsWidget extends StatelessWidget {
                                       color:
                                           context.theme.colorScheme.onTertiary,
                                       // fontWeight: FontWeight.w500,
-                                      fontFamily: "SF-Pro",
+                                      fontFamily: "Poppins",
                                       fontSize: 14.sp,
                               fontWeight: FontWeight.w300
                               ),
@@ -84,7 +84,7 @@ class CustomNotificationPageNewsWidget extends StatelessWidget {
                                     ?.copyWith(
                                         color: context.theme.colorScheme
                                             .onSecondaryContainer,
-                                        fontFamily: "SF-Pro",
+                                        fontFamily: "Poppins",
                                         fontWeight: FontWeight.w500,
                                         fontSize: 20.sp),
                               ),
@@ -100,7 +100,7 @@ class CustomNotificationPageNewsWidget extends StatelessWidget {
                                         color: context.theme.colorScheme
                                             .onSecondaryContainer,
                                         fontWeight: FontWeight.w300,
-                                        fontFamily: "SF-Pro",
+                                        fontFamily: "Poppins",
                                         fontSize: 18.sp),
                               ),
                             ],
