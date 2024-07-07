@@ -1,7 +1,9 @@
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 
-import "../../feature/home/presentation/pages/home_page.dart";
+import "../../feature/auth/presentation/pages/splash_one.dart";
+import "../../feature/auth/presentation/pages/splash_two.dart";
+import "../../feature/home/presentation/pages/home_page_new.dart";
 import "../../feature/main/presentation/pages/main_page.dart";
 import "app_route_name.dart";
 
@@ -19,13 +21,19 @@ class AppRouter {
     // navigatorKey: rootNavigatorKey,
     debugLogDiagnostics: true,
     routes: <RouteBase>[
-      // GoRoute(
-      //   name: "Example",
-      //   path: AppRouteName.example,
-      //   builder: (BuildContext context, GoRouterState state) {
-      //     return example();
-      //   },
-      // ),
+      GoRoute(
+        name: "splash_one",
+        path: AppRouteName.splash_one,
+        builder: (BuildContext context, GoRouterState state) {
+          return const SplashOne();
+        },
+      ),GoRoute(
+        name: "splash_two",
+        path: AppRouteName.splash_two,
+        builder: (BuildContext context, GoRouterState state) {
+          return const SplashTwo();
+        },
+      ),
       ShellRoute(
         builder: (BuildContext context, GoRouterState state, Widget child) {
           return MainPage(

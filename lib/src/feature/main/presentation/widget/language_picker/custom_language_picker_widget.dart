@@ -4,6 +4,7 @@
 import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
 import "package:flutter/widgets.dart";
+import "package:flutter_screenutil/flutter_screenutil.dart";
 import "package:go_router/go_router.dart";
 import "../../../../../../generated/assets.dart";
 import "../../../../../common/routes/app_route_name.dart";
@@ -21,53 +22,56 @@ class CustomLanguagePickerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: <Widget>[
-        const SizedBox(height: 20),
-        CustomEachLanguagePickerWidget(
-          context: context,
-          onSelect: () {
-            Future<dynamic>.delayed(const Duration(seconds: 2)).then<dynamic>(
-                (value) => shouldGoNext
-                    ? context.go(AppRouteName.homePage)
-                    : context.pop());
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16.w),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          SizedBox(height: 20.h),
+          CustomEachLanguagePickerWidget(
+            context: context,
+            onSelect: () {
+              Future<dynamic>.delayed(const Duration(seconds: 2)).then<dynamic>(
+                  (value) => shouldGoNext
+                      ? context.go(AppRouteName.splash_two)
+                      : context.pop());
 
-            localControllerVm.changeLocal(LanguageType.uz);
-          },
-          language: "O'zbekcha",
-          selected: localController.selectedLanguage == "uz",
-          countryFlag: Assets.iconsActiveUser,
-        ),
-        CustomEachLanguagePickerWidget(
-          context: context,
-          onSelect: () {
-            Future<dynamic>.delayed(const Duration(seconds: 2)).then<dynamic>(
-                (value) => shouldGoNext
-                    ? context.go(AppRouteName.homePage)
-                    : context.pop());
+              localControllerVm.changeLocal(LanguageType.uz);
+            },
+            language: "O'zbekcha",
+            selected: localController.selectedLanguage == "uz",
+            countryFlag: Assets.iconsUZB,
+          ),
+          CustomEachLanguagePickerWidget(
+            context: context,
+            onSelect: () {
+              Future<dynamic>.delayed(const Duration(seconds: 2)).then<dynamic>(
+                      (value) => shouldGoNext
+                      ? context.go(AppRouteName.splash_two)
+                      : context.pop());
 
-            localControllerVm.changeLocal(LanguageType.ru);
-          },
-          language: "Русский",
-          selected: localController.selectedLanguage == "ru",
-          countryFlag: Assets.iconsActiveUser,
-        ),
-        CustomEachLanguagePickerWidget(
-          context: context,
-          onSelect: () {
-            Future<dynamic>.delayed(const Duration(seconds: 2)).then<dynamic>(
-                (value) => shouldGoNext
-                    ? context.go(AppRouteName.homePage)
-                    : context.pop());
+              localControllerVm.changeLocal(LanguageType.en);
+            },
+            language: "Узбекча",
+            selected: localController.selectedLanguage == "en",
+            countryFlag: Assets.iconsUZB,
+          ),
+          CustomEachLanguagePickerWidget(
+            context: context,
+            onSelect: () {
+              Future<dynamic>.delayed(const Duration(seconds: 2)).then<dynamic>(
+                  (value) => shouldGoNext
+                      ? context.go(AppRouteName.splash_two)
+                      : context.pop());
 
-            localControllerVm.changeLocal(LanguageType.en);
-          },
-          language: "English",
-          selected: localController.selectedLanguage == "en",
-          countryFlag: Assets.iconsActiveUser,
-        ),
-      ],
+              localControllerVm.changeLocal(LanguageType.ru);
+            },
+            language: "Русский",
+            selected: localController.selectedLanguage == "ru",
+            countryFlag: Assets.iconsRussia,
+          ),
+        ],
+      ),
     );
   }
 }

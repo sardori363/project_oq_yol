@@ -1,8 +1,8 @@
-# PDP Invest
+# Oq yol Project
 
 ![img.png](img.png)
 
-PDP Invest is a versatile project designed for Invest. This comprehensive guide will provide you with everything you need to know to get started with the project, from installation instructions to a detailed description of its features.
+Oq yol Project is a versatile project designed for Taxi drivers. This comprehensive guide will provide you with everything you need to know to get started with the project, from installation instructions to a detailed description of its features.
 
 ## Table of Contents
 
