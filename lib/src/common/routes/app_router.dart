@@ -53,6 +53,27 @@ class AppRouter {
               return const HomePage();
             },
           ),
+          GoRoute(
+            name: "SchedulePage",
+            path: AppRouteName.schedulePage,
+            builder: (BuildContext context, GoRouterState state) {
+              return const SchedulePage();
+            },
+          ),
+          GoRoute(
+            name: "HistoryPage",
+            path: AppRouteName.historyPage,
+            builder: (BuildContext context, GoRouterState state) {
+              return const HistoryPage();
+            },
+          ),
+          GoRoute(
+            name: "ProfilePage",
+            path: AppRouteName.profilePage,
+            builder: (BuildContext context, GoRouterState state) {
+              return const ProfilePage();
+            },
+          ),
         ],
       ),
     ],
