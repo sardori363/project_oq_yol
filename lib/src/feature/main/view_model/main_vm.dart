@@ -14,13 +14,11 @@ class MainVM with ChangeNotifier {
     if (index == 0) {
       context.go(AppRouteName.homePage);
     } else if (index == 1) {
-      context.go(AppRouteName.homePage);
+      context.go(AppRouteName.schedulePage);
     } else if (index == 2) {
-      context.go(AppRouteName.homePage);
+      context.go(AppRouteName.historyPage);
     } else if (index == 3) {
-      context.go(AppRouteName.homePage);
-    } else if (index == 4) {
-      context.go(AppRouteName.homePage);
+      context.go(AppRouteName.profilePage);
     } else {
       context.go(AppRouteName.homePage);
     }

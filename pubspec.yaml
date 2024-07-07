@@ -84,7 +84,9 @@ dependencies:
   #for pdf files
   syncfusion_flutter_pdfviewer: ^24.2.8
   flutter_windowmanager: ^0.2.0
+
   easy_rich_text: ^2.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

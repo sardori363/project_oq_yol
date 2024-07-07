@@ -13,8 +13,8 @@ const ColorScheme lightColorScheme = ColorScheme(
   onSecondary: AppColors.green,
   secondaryContainer: Colors.yellow,
   error: AppColors.red,
+  onSecondaryContainer: AppColors.cardLine,
   ///
-  onSecondaryContainer: Colors.black,
   tertiary: Color(0xffA7A7A7),
   onTertiary: Color(0xffA7A7A7),
   inversePrimary: Color(0xffDFDFDF),
