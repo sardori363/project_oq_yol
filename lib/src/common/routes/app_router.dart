@@ -1,6 +1,8 @@
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 
+import "../../feature/auth/presentation/pages/splash_one.dart";
+import "../../feature/auth/presentation/pages/splash_two.dart";
 import "../../feature/home/presentation/pages/home_page_new.dart";
 import "../../feature/main/presentation/pages/main_page.dart";
 import "app_route_name.dart";
