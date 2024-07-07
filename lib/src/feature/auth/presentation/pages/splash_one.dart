@@ -16,8 +16,8 @@ class SplashOne extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 150.0),
-            child: SvgPicture.asset(Assets.imagesLogo),
+            padding: const EdgeInsets.symmetric(vertical: 10.0),
+            child: Image.asset(Assets.imagesLogonew),
           ),
           Text(
             "Sizga qaysi til qulay?",
