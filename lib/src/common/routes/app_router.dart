@@ -1,8 +1,6 @@
 import "package:flutter/material.dart";
 import "package:go_router/go_router.dart";
 
-import "../../feature/auth/presentation/pages/splash_one.dart";
-import "../../feature/auth/presentation/pages/splash_two.dart";
 import "../../feature/home/presentation/pages/home_page_new.dart";
 import "../../feature/main/presentation/pages/main_page.dart";
 import "app_route_name.dart";
@@ -17,7 +15,7 @@ class AppRouter {
   static const AppRouter _router = AppRouter._internal();
 
   static final GoRouter router = GoRouter(
-    initialLocation: AppRouteName.splash_one,
+    initialLocation: AppRouteName.homePage,
     // navigatorKey: rootNavigatorKey,
     debugLogDiagnostics: true,
     routes: <RouteBase>[
@@ -46,13 +44,6 @@ class AppRouter {
           GoRoute(
             name: "HomePage",
             path: AppRouteName.homePage,
-            builder: (BuildContext context, GoRouterState state) {
-              return const HomePage();
-            },
-          ),
-          GoRoute(
-            name: "Qatnovlar",
-            path: AppRouteName.plans,
             builder: (BuildContext context, GoRouterState state) {
               return const HomePage();
             },
