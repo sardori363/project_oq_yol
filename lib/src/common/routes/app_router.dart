@@ -19,6 +19,13 @@ class AppRouter {
     // navigatorKey: rootNavigatorKey,
     debugLogDiagnostics: true,
     routes: <RouteBase>[
+      // GoRoute(
+      //   name: "Example",
+      //   path: AppRouteName.example,
+      //   builder: (BuildContext context, GoRouterState state) {
+      //     return example();
+      //   },
+      // ),
       ShellRoute(
         builder: (BuildContext context, GoRouterState state, Widget child) {
           return MainPage(
@@ -34,6 +41,15 @@ class AppRouter {
             builder: (BuildContext context, GoRouterState state) {
               return const HomePage();
             },
+            routes: <RouteBase>[
+              // GoRoute(
+              //   name: "AdDetailsPage",
+              //   path: AppRouteName.adDetailsPage,
+              //   builder: (BuildContext context, GoRouterState state) {
+              //     return const AdDetailsPage();
+              //   },
+              // ),
+            ],
           ),
         ],
       ),
