@@ -49,6 +49,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  base58check:
+    dependency: transitive
+    description:
+      name: base58check
+      sha256: "6c300dfc33e598d2fe26319e13f6243fea81eaf8204cb4c6b69ef20a625319a5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
+  bech32:
+    dependency: transitive
+    description:
+      name: bech32
+      sha256: "156cbace936f7720c79a79d16a03efad343b1ef17106716e04b8b8e39f99f7f7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.2"
   boolean_selector:
     dependency: transitive
     description:
@@ -389,18 +405,18 @@ packages:
     dependency: transitive
     description:
       name: firebase_core_platform_interface
-      sha256: c437ae5d17e6b5cc7981cf6fd458a5db4d12979905f9aafd1fea930428a9fe63
+      sha256: "1003a5a03a61fc9a22ef49f37cbcb9e46c86313a7b2e7029b9390cf8c6fc32cb"
       url: "https://pub.dev"
     source: hosted
-    version: "5.0.0"
+    version: "5.1.0"
   firebase_core_web:
     dependency: transitive
     description:
       name: firebase_core_web
-      sha256: "22fcb352744908224fc7be3caae254836099786acfe5df6e9fe901e9c2575a41"
+      sha256: "6643fe3dbd021e6ccfb751f7882b39df355708afbdeb4130fc50f9305a9d1a3d"
       url: "https://pub.dev"
     source: hosted
-    version: "2.17.1"
+    version: "2.17.2"
   firebase_crashlytics:
     dependency: "direct main"
     description:
@@ -467,6 +483,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_multi_formatter:
+    dependency: "direct main"
+    description:
+      name: flutter_multi_formatter
+      sha256: "3495dc0056c96e467039a05bd184a5285c271a0efb2024a7030c7e84ba828994"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.12.8"
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -569,10 +593,10 @@ packages:
     dependency: transitive
     description:
       name: freezed_annotation
-      sha256: c3fd9336eb55a38cc1bbd79ab17573113a8deccd0ecbbf926cca3c62803b5c2d
+      sha256: f54946fdb1fa7b01f780841937b1a80783a20b393485f3f6cdf336fd6f4705f2
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.1"
+    version: "2.4.2"
   frontend_server_client:
     dependency: transitive
     description:
@@ -593,10 +617,10 @@ packages:
     dependency: "direct main"
     description:
       name: go_router
-      sha256: abec47eb8c8c36ebf41d0a4c64dbbe7f956e39a012b3aafc530e951bdc12fe3f
+      sha256: cdae1b9c8bd7efadcef6112e81c903662ef2ce105cbd220a04bbb7c3425b5554
       url: "https://pub.dev"
     source: hosted
-    version: "14.1.4"
+    version: "14.2.0"
   graphs:
     dependency: transitive
     description:
@@ -785,10 +809,10 @@ packages:
     dependency: "direct main"
     description:
       name: local_auth_android
-      sha256: "48dfb2d954da8ef6a77adfc93a29998f7729e9308eaa817e91dea4500317b2c8"
+      sha256: "6b60f9f545af5b5a11a90af3c2ab4361c47fff170134fa1c6d4c7d52e6537174"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.39"
+    version: "1.0.41"
   local_auth_darwin:
     dependency: "direct main"
     description:
@@ -937,10 +961,10 @@ packages:
     dependency: transitive
     description:
       name: path_provider_android
-      sha256: "9c96da072b421e98183f9ea7464898428e764bc0ce5567f27ec8693442e72514"
+      sha256: bca87b0165ffd7cdb9cad8edd22d18d2201e886d9a9f19b4fb3452ea7df3a72a
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.5"
+    version: "2.2.6"
   path_provider_foundation:
     dependency: transitive
     description:
@@ -993,10 +1017,10 @@ packages:
     dependency: transitive
     description:
       name: platform
-      sha256: "12220bb4b65720483f8fa9450b4332347737cf8213dd2840d8b2c823e47243ec"
+      sha256: "9b71283fc13df574056616011fb138fd3b793ea47cc509c189a6c3fa5f8a1a65"
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.4"
+    version: "3.1.5"
   plugin_platform_interface:
     dependency: transitive
     description:

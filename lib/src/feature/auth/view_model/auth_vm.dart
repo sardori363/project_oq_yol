@@ -28,6 +28,7 @@ class AuthVM with ChangeNotifier {
 
   bool privacyPolicyAccepted = false;
   bool privateDataAccepted = false;
+  final Provider<bool> passwordVisibleProvider = Provider<bool>((ProviderRef<bool> ref) => false);
 
   void switchPrivacy(){
     privacyPolicyAccepted = !privacyPolicyAccepted;
