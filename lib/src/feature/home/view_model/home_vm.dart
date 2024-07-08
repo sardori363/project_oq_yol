@@ -6,9 +6,15 @@ AutoDisposeChangeNotifierProvider<HomeVM> homeVM = ChangeNotifierProvider.autoDi
 
 class HomeVM with ChangeNotifier {
   bool isPassengers = true;
+  bool isNotificationOn = true;
 
   void changePassengers(){
     isPassengers = !isPassengers;
+    notifyListeners();
+  }
+
+  void changeNotification(bool v){
+    isNotificationOn = v;
     notifyListeners();
   }
 }
