@@ -11,7 +11,7 @@ const ColorScheme lightColorScheme = ColorScheme(
   onPrimaryContainer: AppColors.lightGrey,
   secondary: AppColors.tgBlue,
   onSecondary: AppColors.green,
-  secondaryContainer: Colors.yellow,
+  secondaryContainer: AppColors.yellow,
   error: AppColors.red,
   onSecondaryContainer: AppColors.cardLine,
   ///

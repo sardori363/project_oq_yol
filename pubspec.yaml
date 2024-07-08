@@ -87,6 +87,9 @@ dependencies:
 
   easy_rich_text: ^2.1.0
 
+  # to redirect to other apps(tg, calls, maps):
+  url_launcher: ^6.0.20
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

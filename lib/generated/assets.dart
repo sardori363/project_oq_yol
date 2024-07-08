@@ -26,18 +26,20 @@ class Assets {
   static const String iconsActiveTrash = 'assets/icons/activeTrash.svg';
   static const String iconsActiveUser = 'assets/icons/activeUser.svg';
   static const String iconsCalendar = 'assets/icons/Calendar.svg';
+  static const String iconsClose = 'assets/icons/Close.svg';
   static const String iconsFilter = 'assets/icons/Filter.svg';
   static const String iconsHome = 'assets/icons/Home.svg';
-  static const String iconsRussia = 'assets/icons/russia.svg';
   static const String iconsLineArrowRight = 'assets/icons/lineArrowRight.svg';
+  static const String iconsLogo = 'assets/icons/logo.svg';
+  static const String iconsNavigator2 = 'assets/icons/navigator2.svg';
   static const String iconsPhone = 'assets/icons/Phone.svg';
   static const String iconsQuestion = 'assets/icons/question.svg';
+  static const String iconsRussia = 'assets/icons/russia.svg';
   static const String iconsSearchZoomIn = 'assets/icons/search-zoom-in.svg';
   static const String iconsTelegram = 'assets/icons/telegram.svg';
   static const String iconsTrash = 'assets/icons/Trash.svg';
   static const String iconsUZB = 'assets/icons/UZB.svg';
   static const String iconsUser = 'assets/icons/User.svg';
-  static const String imagesLogo = 'assets/images/logo.svg';
   static const String imagesLogonew = 'assets/images/logonew.png';
 
 }
