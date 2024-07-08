@@ -94,6 +94,25 @@ class RegisterCar extends StatelessWidget {
             ),
             SizedBox(height: 20.h),
 
+            /// Moshina ragi
+            Text(
+              "Konditsioner",
+              style: TextStyle(
+                fontSize: 14.sp,
+                color: context.theme.colorScheme.primary,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            SizedBox(height: 10.h),
+            DropdownBtn(
+              dropDownListItems: const <String>["Qora", "Oq", "Havorang", "Sariq", "Ko'k", "Boshqa"],
+              prefixIcon: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: SvgPicture.asset(Assets.iconsBlack),
+              ),
+            ),
+            SizedBox(height: 20.h),
+
             /// Konditsioner
             Text(
               "Konditsioner",

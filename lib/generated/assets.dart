@@ -28,6 +28,7 @@ class Assets {
   static const String iconsAddPfp = 'assets/icons/addPfp.svg';
   static const String iconsAddPlusCircle = 'assets/icons/Add_Plus_Circle.svg';
   static const String iconsAirConditioner = 'assets/icons/air_conditioner.svg';
+  static const String iconsBlack = 'assets/icons/black.svg';
   static const String iconsCalendar = 'assets/icons/Calendar.svg';
   static const String iconsCar = 'assets/icons/car.svg';
   static const String iconsCheckCircleBlack = 'assets/icons/check_circle_black.svg';
