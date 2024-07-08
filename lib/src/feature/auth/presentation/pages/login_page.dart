@@ -119,7 +119,7 @@ class LoginPage extends StatelessWidget {
             ),
             SizedBox(height: 10.h),
 
-            ValueListenableBuilder(
+            ValueListenableBuilder<bool>(
               valueListenable: passwordVisible,
               builder: (BuildContext context, bool value, Widget? child) {
                 return TextFormField(

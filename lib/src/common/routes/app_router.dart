@@ -3,6 +3,7 @@ import "package:go_router/go_router.dart";
 
 import "../../feature/auth/presentation/pages/login_page.dart";
 import "../../feature/auth/presentation/pages/register/register_auth.dart";
+import "../../feature/auth/presentation/pages/register/register_car.dart";
 import "../../feature/auth/presentation/pages/register/register_page.dart";
 import "../../feature/auth/presentation/pages/splash/splash_one.dart";
 import "../../feature/auth/presentation/pages/splash/splash_two.dart";
@@ -23,7 +24,7 @@ class AppRouter {
   static const AppRouter _router = AppRouter._internal();
 
   static final GoRouter router = GoRouter(
-    initialLocation: AppRouteName.register_page,
+    initialLocation: AppRouteName.register_car,
     // navigatorKey: rootNavigatorKey,
     debugLogDiagnostics: true,
     routes: <RouteBase>[
@@ -61,6 +62,13 @@ class AppRouter {
         path: AppRouteName.register_auth,
         builder: (BuildContext context, GoRouterState state) {
           return const RegisterAuth();
+        },
+      ),
+      GoRoute(
+        name: "register_car",
+        path: AppRouteName.register_car,
+        builder: (BuildContext context, GoRouterState state) {
+          return const RegisterCar();
         },
       ),
 

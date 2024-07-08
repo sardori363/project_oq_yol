@@ -25,7 +25,9 @@ class Assets {
   static const String iconsActiveHome = 'assets/icons/activeHome.svg';
   static const String iconsActiveTrash = 'assets/icons/activeTrash.svg';
   static const String iconsActiveUser = 'assets/icons/activeUser.svg';
+  static const String iconsAirConditioner = 'assets/icons/air_conditioner.svg';
   static const String iconsCalendar = 'assets/icons/Calendar.svg';
+  static const String iconsCar = 'assets/icons/car.svg';
   static const String iconsCheckCircleBlack = 'assets/icons/check_circle_black.svg';
   static const String iconsCheckCircleGrey = 'assets/icons/check_circle_grey.svg';
   static const String iconsFilter = 'assets/icons/Filter.svg';
@@ -41,6 +43,7 @@ class Assets {
   static const String iconsTrash = 'assets/icons/Trash.svg';
   static const String iconsUZB = 'assets/icons/UZB.svg';
   static const String iconsUser = 'assets/icons/User.svg';
+  static const String iconsUzIcon = 'assets/icons/uz_icon.svg';
   static const String imagesLogonew = 'assets/images/logonew.png';
   static const String imagesTaxiBg = 'assets/images/taxi_bg.png';
   static const String imagesTaxiSplash = 'assets/images/taxi_splash.png';

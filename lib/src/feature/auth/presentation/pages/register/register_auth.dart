@@ -45,8 +45,12 @@ class RegisterAuth extends StatelessWidget {
                     SizedBox(
                       width: 62.w,
                       height: 62.h,
-                      child: TextField(
-                        textInputAction: TextInputAction.next,
+                      child: TextFormField(
+                        onChanged: (String value) {
+                          if (value.length == 1) {
+                            FocusScope.of(context).nextFocus();
+                          }
+                        },
                         style: Theme.of(context).textTheme.headlineMedium,
                         keyboardType: TextInputType.number,
                         textAlign: TextAlign.center,
@@ -65,8 +69,12 @@ class RegisterAuth extends StatelessWidget {
                     SizedBox(
                       width: 62.w,
                       height: 62.h,
-                      child: TextField(
-                        textInputAction: TextInputAction.next,
+                      child: TextFormField(
+                        onChanged: (String value) {
+                          if (value.length == 1) {
+                            FocusScope.of(context).nextFocus();
+                          }
+                        },
                         style: Theme.of(context).textTheme.headlineMedium,
                         keyboardType: TextInputType.number,
                         textAlign: TextAlign.center,
@@ -85,8 +93,12 @@ class RegisterAuth extends StatelessWidget {
                     SizedBox(
                       width: 62.w,
                       height: 62.h,
-                      child: TextField(
-                        textInputAction: TextInputAction.next,
+                      child: TextFormField(
+                        onChanged: (String value) {
+                          if (value.length == 1) {
+                            FocusScope.of(context).nextFocus();
+                          }
+                        },
                         style: Theme.of(context).textTheme.headlineMedium,
                         keyboardType: TextInputType.number,
                         textAlign: TextAlign.center,
@@ -105,8 +117,12 @@ class RegisterAuth extends StatelessWidget {
                     SizedBox(
                       width: 62.w,
                       height: 62.h,
-                      child: TextField(
-                        textInputAction: TextInputAction.done,
+                      child: TextFormField(
+                        onChanged: (String value) {
+                          if (value.length == 1) {
+                            FocusScope.of(context).nextFocus();
+                          }
+                        },
                         style: Theme.of(context).textTheme.headlineMedium,
                         keyboardType: TextInputType.number,
                         textAlign: TextAlign.center,
@@ -129,7 +145,7 @@ class RegisterAuth extends StatelessWidget {
             SizedBox(height: 32.h),
             ElevatedButton(
               onPressed: () {
-                context.go(AppRouteName.homePage);
+                context.go(AppRouteName.register_car);
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(context.theme.colorScheme.primary),
