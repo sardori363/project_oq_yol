@@ -15,13 +15,16 @@ final class AppRouteName {
 
   // profile
   static const String profilePage = "/profile_page";
+  static const String settings_car = "/settings_car";
+  static const String settings_appearance = "/settings_appearance";
+  static const String settings_profile = "/settings_profile";
 
   // history
   static const String historyPage = "/history_page";
 
   // Auth
-  static const String splash_one = "/splash_one";
-  static const String splash_two = "/splash_two";
+  static const String splash = "/splash";
+  static const String language_selection = "/language_selection";
 
   static const String login_page = "/login";
   static const String register_page = "/register";

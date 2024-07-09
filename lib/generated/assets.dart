@@ -35,6 +35,7 @@ class Assets {
   static const String iconsCheckCircleBlack = 'assets/icons/check_circle_black.svg';
   static const String iconsCheckCircleGrey = 'assets/icons/check_circle_grey.svg';
   static const String iconsClock = 'assets/icons/clock.svg';
+  static const String iconsCircleIcon = 'assets/icons/circle_icon.svg';
   static const String iconsClose = 'assets/icons/Close.svg';
   static const String iconsFilter = 'assets/icons/Filter.svg';
   static const String iconsFilterUser = 'assets/icons/filterUser.svg';
@@ -48,6 +49,7 @@ class Assets {
   static const String iconsMapPin = 'assets/icons/Map_Pin.svg';
   static const String iconsNavigator2 = 'assets/icons/navigator2.svg';
   static const String iconsNotification = 'assets/icons/notification.svg';
+  static const String iconsPasswordKey = 'assets/icons/password_key.svg';
   static const String iconsPhone = 'assets/icons/Phone.svg';
   static const String iconsProfile = 'assets/icons/profile.svg';
   static const String iconsQuestion = 'assets/icons/question.svg';
@@ -60,8 +62,11 @@ class Assets {
   static const String iconsUZB = 'assets/icons/UZB.svg';
   static const String iconsUser = 'assets/icons/User.svg';
   static const String iconsUzIcon = 'assets/icons/uz_icon.svg';
+  static const String imagesDark = 'assets/images/dark.png';
   static const String imagesLogonew = 'assets/images/logonew.png';
+  static const String imagesSystem = 'assets/images/system.png';
   static const String imagesTaxiBg = 'assets/images/taxi_bg.png';
   static const String imagesTaxiSplash = 'assets/images/taxi_splash.png';
+  static const String imagesWhite = 'assets/images/white.png';
 
 }

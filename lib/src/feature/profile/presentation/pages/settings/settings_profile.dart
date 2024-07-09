@@ -1,18 +1,17 @@
-import "package:flutter/gestures.dart";
+import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
-import "package:flutter_multi_formatter/flutter_multi_formatter.dart";
+import "package:flutter_multi_formatter/formatters/masked_input_formatter.dart";
 import "package:flutter_screenutil/flutter_screenutil.dart";
-import "package:flutter_svg/flutter_svg.dart";
+import "package:flutter_svg/svg.dart";
 import "package:go_router/go_router.dart";
 
 import "../../../../../../generated/assets.dart";
 import "../../../../../common/routes/app_route_name.dart";
-import "../../../../../common/styles/app_colors.dart";
 import "../../../../../common/utils/extensions/context_extensions.dart";
 
-class RegisterPage extends StatelessWidget {
-  const RegisterPage({super.key});
+class SettingsProfile extends StatelessWidget {
+  const SettingsProfile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +20,26 @@ class RegisterPage extends StatelessWidget {
     final ValueNotifier<bool> isValidPhone = ValueNotifier(false);
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Mening ma'lumotlarim",
+          style: TextStyle(
+            fontSize: 25.sp,
+            color: context.theme.colorScheme.primary,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            context.pop();
+          },
+          icon: Icon(
+            CupertinoIcons.back,
+            color: context.theme.colorScheme.primary,
+            size: 30.sp,
+          ),
+        ),
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -29,30 +48,12 @@ class RegisterPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              SizedBox(height: 100.h),
-              Text(
-                "Ro’yxatdan o’ting",
-                style: TextStyle(
-                  fontSize: 25.sp,
-                  color: AppColors.black,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              Text(
-                "Iltimos, ro’yxatdan o’tish uchun quyidagi\nma’lumotlarni to’ldiring!",
-                style: TextStyle(
-                  fontSize: 16.sp,
-                  color: context.theme.colorScheme.primaryContainer,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-              SizedBox(height: 27.h),
-
+              SizedBox(height: 20.h),
               Text(
                 "F.I.Sh",
                 style: TextStyle(
                   fontSize: 14.sp,
-                  color: AppColors.black,
+                  color: context.theme.colorScheme.primary,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -80,7 +81,7 @@ class RegisterPage extends StatelessWidget {
                 "Telefon raqam",
                 style: TextStyle(
                   fontSize: 14.sp,
-                  color: AppColors.black,
+                  color: context.theme.colorScheme.primary,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -147,10 +148,10 @@ class RegisterPage extends StatelessWidget {
 
               /// Parol kiritish
               Text(
-                "Parolni kiriting",
+                "Hozirgi Parolingiz",
                 style: TextStyle(
                   fontSize: 14.sp,
-                  color: AppColors.black,
+                  color: context.theme.colorScheme.primary,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -170,11 +171,64 @@ class RegisterPage extends StatelessWidget {
                         borderSide: BorderSide.none,
                       ),
                       prefixIcon: Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: SvgPicture.asset(
-                          Assets.iconsPasswordKey,
-                          color: context.theme.colorScheme.primary,
+                        padding: const EdgeInsets.all(12),
+                        child: SvgPicture.asset(Assets.iconsPasswordKey),
+                      ),
+                      suffixIcon: IconButton(
+                        icon: Icon(
+                          value ? Icons.visibility : Icons.visibility_off,
+                          color: Theme.of(context).colorScheme.primary,
                         ),
+                        onPressed: () {
+                          passwordVisible.value = !value;
+                        },
+                      ),
+                    ),
+                    validator: (String? value) {
+                      // Password must be at least 8 characters long and include uppercase, lowercase, numbers, and special characters
+                      const String pattern = r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}$";
+                      final RegExp regex = RegExp(pattern);
+                      if (value == null || value.isEmpty) {
+                        return "Password is required";
+                      }
+                      if (!regex.hasMatch(value)) {
+                        return "Password must be at least 8 characters long and include uppercase, lowercase, numbers, and special characters";
+                      }
+                      return null;
+                    },
+                  );
+                },
+              ),
+
+              SizedBox(height: 20.h),
+
+              /// Parol kiritish
+              Text(
+                "Yangi Parolni kiriting",
+                style: TextStyle(
+                  fontSize: 14.sp,
+                  color: context.theme.colorScheme.primary,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              SizedBox(height: 10.h),
+
+              ValueListenableBuilder(
+                valueListenable: passwordVisible,
+                builder: (BuildContext context, bool value, Widget? child) {
+                  return TextFormField(
+                    obscureText: value,
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: context.theme.colorScheme.onPrimaryContainer,
+                      hintText: "********",
+                      border: const OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        borderSide: BorderSide.none,
+                      ),
+                      prefixIcon: Padding(
+                        padding: const EdgeInsets.all(12),
+                        child: SvgPicture.asset(Assets.iconsPasswordKey),
                       ),
                       suffixIcon: IconButton(
                         icon: Icon(
@@ -205,10 +259,10 @@ class RegisterPage extends StatelessWidget {
               SizedBox(height: 20.h),
 
               Text(
-                "Parolni takrorlang",
+                "Yangi Parolni takrorlang",
                 style: TextStyle(
                   fontSize: 14.sp,
-                  color: AppColors.black,
+                  color: context.theme.colorScheme.primary,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -228,11 +282,8 @@ class RegisterPage extends StatelessWidget {
                         borderSide: BorderSide.none,
                       ),
                       prefixIcon: Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: SvgPicture.asset(
-                          Assets.iconsPasswordKey,
-                          color: context.theme.colorScheme.primary,
-                        ),
+                        padding: const EdgeInsets.all(12),
+                        child: SvgPicture.asset(Assets.iconsPasswordKey),
                       ),
                       suffixIcon: IconButton(
                         icon: Icon(
@@ -279,7 +330,7 @@ class RegisterPage extends StatelessWidget {
                   height: 54.h,
                   alignment: Alignment.center,
                   child: Text(
-                    "Keyingi",
+                    "Saqlash",
                     style: TextStyle(
                       fontSize: 16.sp,
                       color: context.theme.colorScheme.onPrimary,
@@ -287,31 +338,6 @@ class RegisterPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 100.h),
-              Center(
-                child: RichText(
-                  textAlign: TextAlign.center,
-                  text: TextSpan(
-                    text: "Allaqachon akkount ochganmisiz?  ",
-                    style: TextStyle(
-                      color: context.theme.colorScheme.primaryContainer,
-                      fontWeight: FontWeight.w700,
-                    ),
-                    children: <InlineSpan>[
-                      TextSpan(
-                          text: "Login",
-                          style: TextStyle(
-                            color: context.theme.colorScheme.primary,
-                          ),
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = () {
-                              context.go(AppRouteName.login_page);
-                            }),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 50.h),
             ],
           ),
         ),

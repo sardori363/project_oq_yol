@@ -5,13 +5,16 @@ import "../../feature/auth/presentation/pages/login_page.dart";
 import "../../feature/auth/presentation/pages/register/register_auth.dart";
 import "../../feature/auth/presentation/pages/register/register_car.dart";
 import "../../feature/auth/presentation/pages/register/register_page.dart";
-import "../../feature/auth/presentation/pages/splash/splash_one.dart";
-import "../../feature/auth/presentation/pages/splash/splash_two.dart";
+import "../../feature/auth/presentation/pages/splash/splash.dart";
+import "../../feature/auth/presentation/pages/splash/language_selection.dart";
 import "../../feature/history/presentation/pages/history_page.dart";
 import "../../feature/home/presentation/pages/filter_page.dart";
 import "../../feature/home/presentation/pages/home_page.dart";
 import "../../feature/main/presentation/pages/main_page.dart";
 import "../../feature/profile/presentation/pages/profile_page.dart";
+import "../../feature/profile/presentation/pages/settings/appereance.dart";
+import "../../feature/profile/presentation/pages/settings/car.dart";
+import "../../feature/profile/presentation/pages/settings/settings_profile.dart";
 import "../../feature/schedule/presentation/pages/schedule_page.dart";
 import "app_route_name.dart";
 
@@ -24,23 +27,23 @@ class AppRouter {
   static const AppRouter _router = AppRouter._internal();
 
   static final GoRouter router = GoRouter(
-    initialLocation: AppRouteName.splash_one,
+    initialLocation: AppRouteName.splash,
     // navigatorKey: rootNavigatorKey,
     debugLogDiagnostics: true,
     routes: <RouteBase>[
       // Auth
       GoRoute(
         name: "splash_one",
-        path: AppRouteName.splash_one,
+        path: AppRouteName.splash,
         builder: (BuildContext context, GoRouterState state) {
-          return const SplashOne();
+          return const SplashPage();
         },
       ),
       GoRoute(
         name: "splash_two",
-        path: AppRouteName.splash_two,
+        path: AppRouteName.language_selection,
         builder: (BuildContext context, GoRouterState state) {
-          return const SplashTwo();
+          return const LanguageSelection();
         },
       ),
       GoRoute(
@@ -69,6 +72,29 @@ class AppRouter {
         path: AppRouteName.register_car,
         builder: (BuildContext context, GoRouterState state) {
           return const RegisterCar();
+        },
+      ),
+
+      //Setting in Profile
+      GoRoute(
+        name: "settings_profile",
+        path: AppRouteName.settings_profile,
+        builder: (BuildContext context, GoRouterState state) {
+          return const SettingsProfile();
+        },
+      ),
+      GoRoute(
+        name: "settings_car",
+        path: AppRouteName.settings_car,
+        builder: (BuildContext context, GoRouterState state) {
+          return const SettingsCar();
+        },
+      ),
+      GoRoute(
+        name: "settings_appearance",
+        path: AppRouteName.settings_appearance,
+        builder: (BuildContext context, GoRouterState state) {
+          return const SettingsAppearance();
         },
       ),
 
