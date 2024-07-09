@@ -33,7 +33,7 @@ class CustomLanguagePickerWidget extends StatelessWidget {
             onSelect: () {
               Future<dynamic>.delayed(const Duration(seconds: 2)).then<dynamic>(
                   (value) => shouldGoNext
-                      ? context.go(AppRouteName.splash_two)
+                      ? context.go(AppRouteName.language_selection)
                       : context.pop());
 
               localControllerVm.changeLocal(LanguageType.uz);
@@ -47,7 +47,7 @@ class CustomLanguagePickerWidget extends StatelessWidget {
             onSelect: () {
               Future<dynamic>.delayed(const Duration(seconds: 2)).then<dynamic>(
                       (value) => shouldGoNext
-                      ? context.go(AppRouteName.splash_two)
+                      ? context.go(AppRouteName.language_selection)
                       : context.pop());
 
               localControllerVm.changeLocal(LanguageType.en);
@@ -61,7 +61,7 @@ class CustomLanguagePickerWidget extends StatelessWidget {
             onSelect: () {
               Future<dynamic>.delayed(const Duration(seconds: 2)).then<dynamic>(
                   (value) => shouldGoNext
-                      ? context.go(AppRouteName.splash_two)
+                      ? context.go(AppRouteName.language_selection)
                       : context.pop());
 
               localControllerVm.changeLocal(LanguageType.ru);

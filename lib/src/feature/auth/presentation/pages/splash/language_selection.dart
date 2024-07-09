@@ -5,8 +5,8 @@ import "../../../../../../generated/assets.dart";
 import "../../../../../common/widget/app_material_context.dart";
 import "../../../../main/presentation/widget/language_picker/custom_language_picker_widget.dart";
 
-class SplashOne extends StatelessWidget {
-  const SplashOne({super.key});
+class LanguageSelection extends StatelessWidget {
+  const LanguageSelection({super.key});
 
   @override
   Widget build(BuildContext context) {

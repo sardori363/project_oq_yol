@@ -5,8 +5,8 @@ import "../../feature/auth/presentation/pages/login_page.dart";
 import "../../feature/auth/presentation/pages/register/register_auth.dart";
 import "../../feature/auth/presentation/pages/register/register_car.dart";
 import "../../feature/auth/presentation/pages/register/register_page.dart";
-import "../../feature/auth/presentation/pages/splash/splash_one.dart";
-import "../../feature/auth/presentation/pages/splash/splash_two.dart";
+import "../../feature/auth/presentation/pages/splash/splash.dart";
+import "../../feature/auth/presentation/pages/splash/language_selection.dart";
 import "../../feature/history/presentation/pages/history_page.dart";
 import "../../feature/home/presentation/pages/home_page.dart";
 import "../../feature/main/presentation/pages/main_page.dart";
@@ -27,23 +27,23 @@ class AppRouter {
   static const AppRouter _router = AppRouter._internal();
 
   static final GoRouter router = GoRouter(
-    initialLocation: AppRouteName.settings_profile,
+    initialLocation: AppRouteName.splash,
     // navigatorKey: rootNavigatorKey,
     debugLogDiagnostics: true,
     routes: <RouteBase>[
       // Auth
       GoRoute(
         name: "splash_one",
-        path: AppRouteName.splash_one,
+        path: AppRouteName.splash,
         builder: (BuildContext context, GoRouterState state) {
-          return const SplashOne();
+          return const SplashPage();
         },
       ),
       GoRoute(
         name: "splash_two",
-        path: AppRouteName.splash_two,
+        path: AppRouteName.language_selection,
         builder: (BuildContext context, GoRouterState state) {
-          return const SplashTwo();
+          return const LanguageSelection();
         },
       ),
       GoRoute(

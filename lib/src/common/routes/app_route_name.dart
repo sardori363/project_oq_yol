@@ -24,8 +24,8 @@ final class AppRouteName {
   static const String historyPage = "/history_page";
 
   // Auth
-  static const String splash_one = "/splash_one";
-  static const String splash_two = "/splash_two";
+  static const String splash = "/splash";
+  static const String language_selection = "/language_selection";
 
   static const String login_page = "/login";
   static const String register_page = "/register";
