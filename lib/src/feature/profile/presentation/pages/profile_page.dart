@@ -9,6 +9,7 @@ import "package:flutter_svg/flutter_svg.dart";
 
 import "../../../../../generated/assets.dart";
 import "../../../../common/utils/extensions/context_extensions.dart";
+import "../../../../common/widget/common used widgets/notification_switcher.dart";
 import "../../../auth/presentation/widgets/drop_down_widget.dart";
 
 
@@ -174,47 +175,7 @@ class ProfilePage extends ConsumerWidget {
               /// header
 
               SizedBox(height: 12.h,),
-              Row(
-                children: <Widget>[
-                  SvgPicture.asset(
-                    Assets.iconsNotification,
-                    height: 30.h,
-                    width: 30.w,
-                  ),
-                  SizedBox(
-                    width: 16.w,
-                  ),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          "Men ishlayabman",
-                          style: Theme
-                              .of(context)
-                              .textTheme
-                              .titleMedium
-                              ?.copyWith(fontWeight: FontWeight.w600, fontSize: 14.sp, fontFamily: "Poppins"),
-                        ),
-                        Text(
-                          maxLines: 2,
-                          "Ishlayotgan paytingiz yangi mijozlar haqida haqida xabarnoma olish uchun yoqing",
-                          style: Theme
-                              .of(context)
-                              .textTheme
-                              .titleMedium
-                              ?.copyWith(fontWeight: FontWeight.w400, fontSize: 12.sp, fontFamily: "Poppins"),
-                        ),
-                      ],
-                    ),
-                  ),
-                  CupertinoSwitch(
-                      value: true,
-                      onChanged: (bool v) {
-                        // con.changeNotification(v);
-                      }),
-                ],
-              ),
+              const NotificationSwitcher(),
               SizedBox(height: 12.h,),
 
               /// Moshina
