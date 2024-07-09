@@ -24,7 +24,7 @@ class AppRouter {
   static const AppRouter _router = AppRouter._internal();
 
   static final GoRouter router = GoRouter(
-    initialLocation: AppRouteName.register_car,
+    initialLocation: AppRouteName.splash_one,
     // navigatorKey: rootNavigatorKey,
     debugLogDiagnostics: true,
     routes: <RouteBase>[
