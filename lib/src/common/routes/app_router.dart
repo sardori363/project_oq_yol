@@ -8,12 +8,12 @@ import "../../feature/auth/presentation/pages/register/register_page.dart";
 import "../../feature/auth/presentation/pages/splash/splash_one.dart";
 import "../../feature/auth/presentation/pages/splash/splash_two.dart";
 import "../../feature/history/presentation/pages/history_page.dart";
+import "../../feature/home/presentation/pages/filter_page.dart";
 import "../../feature/home/presentation/pages/home_page.dart";
 import "../../feature/main/presentation/pages/main_page.dart";
 import "../../feature/profile/presentation/pages/profile_page.dart";
 import "../../feature/schedule/presentation/pages/schedule_page.dart";
 import "app_route_name.dart";
-
 
 @immutable
 class AppRouter {
@@ -88,6 +88,15 @@ class AppRouter {
             builder: (BuildContext context, GoRouterState state) {
               return const HomePage();
             },
+            routes: <RouteBase>[
+              GoRoute(
+                name: "FilterPage",
+                path: AppRouteName.filterPage,
+                builder: (BuildContext context, GoRouterState state) {
+                  return const FilterPage();
+                },
+              ),
+            ],
           ),
           GoRoute(
             name: "SchedulePage",

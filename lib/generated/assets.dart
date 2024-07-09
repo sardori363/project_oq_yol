@@ -21,6 +21,7 @@ class Assets {
   static const String fontsPoppinsSemiBoldItalic = 'assets/fonts/Poppins-SemiBoldItalic.ttf';
   static const String fontsPoppinsThin = 'assets/fonts/Poppins-Thin.ttf';
   static const String fontsPoppinsThinItalic = 'assets/fonts/Poppins-ThinItalic.ttf';
+  static const String iconsAc = 'assets/icons/ac.svg';
   static const String iconsActiveCalendar = 'assets/icons/activeCalendar.svg';
   static const String iconsActiveHome = 'assets/icons/activeHome.svg';
   static const String iconsActiveTrash = 'assets/icons/activeTrash.svg';
@@ -33,10 +34,16 @@ class Assets {
   static const String iconsCar = 'assets/icons/car.svg';
   static const String iconsCheckCircleBlack = 'assets/icons/check_circle_black.svg';
   static const String iconsCheckCircleGrey = 'assets/icons/check_circle_grey.svg';
+  static const String iconsClock = 'assets/icons/clock.svg';
   static const String iconsClose = 'assets/icons/Close.svg';
   static const String iconsFilter = 'assets/icons/Filter.svg';
+  static const String iconsFilterUser = 'assets/icons/filterUser.svg';
   static const String iconsHome = 'assets/icons/Home.svg';
+  static const String iconsKeeyboardLeft = 'assets/icons/keeyboardLeft.svg';
+  static const String iconsKeyboardDown = 'assets/icons/keyboardDown.svg';
   static const String iconsLineArrowRight = 'assets/icons/lineArrowRight.svg';
+  static const String iconsLocationDestionation = 'assets/icons/locationDestionation.svg';
+  static const String iconsLocationUser = 'assets/icons/locationUser.svg';
   static const String iconsLoginArrowDown = 'assets/icons/login_arrow_down.svg';
   static const String iconsMapPin = 'assets/icons/Map_Pin.svg';
   static const String iconsNavigator2 = 'assets/icons/navigator2.svg';
@@ -44,6 +51,7 @@ class Assets {
   static const String iconsPhone = 'assets/icons/Phone.svg';
   static const String iconsProfile = 'assets/icons/profile.svg';
   static const String iconsQuestion = 'assets/icons/question.svg';
+  static const String iconsRefresh = 'assets/icons/Refresh.svg';
   static const String iconsRegisterUser = 'assets/icons/register_user.svg';
   static const String iconsRussia = 'assets/icons/russia.svg';
   static const String iconsSearchZoomIn = 'assets/icons/search-zoom-in.svg';

@@ -8,8 +8,7 @@ final class AppRouteName {
 
   // home
   static const String homePage = "/";
-  static const String adDetailsPage = "ad_details_page";
-  static const String plans = "/qatnovlar";
+  static const String filterPage = "filter_page";
 
   // schedule
   static const String schedulePage = "/schedule_page";

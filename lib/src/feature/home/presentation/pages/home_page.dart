@@ -2,9 +2,12 @@ import "package:flutter/material.dart";
 import "package:flutter_riverpod/flutter_riverpod.dart";
 import "package:flutter_screenutil/flutter_screenutil.dart";
 import "package:flutter_svg/flutter_svg.dart";
+import "package:go_router/go_router.dart";
 
 import "../../../../../generated/assets.dart";
+import "../../../../common/routes/app_route_name.dart";
 import "../../../../common/utils/extensions/context_extensions.dart";
+import "../../../../common/widget/common used widgets/custom_btn.dart";
 import "../../view_model/home_vm.dart";
 import "../widgets/home_widgets.dart";
 
@@ -55,16 +58,9 @@ class HomePage extends ConsumerWidget {
                   ),
                 ),
                 const Spacer(),
-                TextButton(
-                  onPressed: () {},
-                  style: TextButton.styleFrom(
-                    minimumSize: Size(40.w, 40.h),
-                    padding: EdgeInsets.symmetric(horizontal: 8.h, vertical: 8.w),
-                    side: BorderSide(color: contextColor.primaryContainer),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                  ),
-                  child: SvgPicture.asset(Assets.iconsFilter),
-                ),
+                CustomBtn(iconPath: Assets.iconsFilter, onPressed: (){
+                  GoRouter.of(context).go("/${AppRouteName.homePage}/${AppRouteName.filterPage}");
+                }),
               ],
             ),
             SizedBox(
