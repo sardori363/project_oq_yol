@@ -132,6 +132,13 @@ class LoginPage extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
                       borderSide: BorderSide.none,
                     ),
+                    prefixIcon: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: SvgPicture.asset(
+                        Assets.iconsPasswordKey,
+                        color: context.theme.colorScheme.primary,
+                      ),
+                    ),
                     suffixIcon: IconButton(
                       icon: Icon(
                         value ? Icons.visibility : Icons.visibility_off,
