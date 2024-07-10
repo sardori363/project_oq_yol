@@ -75,29 +75,6 @@ class AppRouter {
         },
       ),
 
-      //Setting in Profile
-      GoRoute(
-        name: "settings_profile",
-        path: AppRouteName.settings_profile,
-        builder: (BuildContext context, GoRouterState state) {
-          return const SettingsProfile();
-        },
-      ),
-      GoRoute(
-        name: "settings_car",
-        path: AppRouteName.settings_car,
-        builder: (BuildContext context, GoRouterState state) {
-          return const SettingsCar();
-        },
-      ),
-      GoRoute(
-        name: "settings_appearance",
-        path: AppRouteName.settings_appearance,
-        builder: (BuildContext context, GoRouterState state) {
-          return const SettingsAppearance();
-        },
-      ),
-
       // Main
       ShellRoute(
         builder: (BuildContext context, GoRouterState state, Widget child) {
@@ -144,6 +121,30 @@ class AppRouter {
             builder: (BuildContext context, GoRouterState state) {
               return const ProfilePage();
             },
+            routes: [
+              //Setting in Profile
+              GoRoute(
+                name: "settings_profile",
+                path: AppRouteName.settings_profile,
+                builder: (BuildContext context, GoRouterState state) {
+                  return const SettingsProfile();
+                },
+              ),
+              GoRoute(
+                name: "settings_car",
+                path: AppRouteName.settings_car,
+                builder: (BuildContext context, GoRouterState state) {
+                  return const SettingsCar();
+                },
+              ),
+              GoRoute(
+                name: "settings_appearance",
+                path: AppRouteName.settings_appearance,
+                builder: (BuildContext context, GoRouterState state) {
+                  return const SettingsAppearance();
+                },
+              ),
+            ]
           ),
         ],
       ),

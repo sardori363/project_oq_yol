@@ -1,16 +1,14 @@
 import "package:easy_rich_text/easy_rich_text.dart";
-import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
-import "package:flutter/services.dart";
-import "package:flutter_multi_formatter/formatters/masked_input_formatter.dart";
 import "package:flutter_riverpod/flutter_riverpod.dart";
 import "package:flutter_screenutil/flutter_screenutil.dart";
 import "package:flutter_svg/flutter_svg.dart";
+import "package:go_router/go_router.dart";
 
 import "../../../../../generated/assets.dart";
+import "../../../../common/routes/app_route_name.dart";
 import "../../../../common/utils/extensions/context_extensions.dart";
 import "../../../../common/widget/common used widgets/notification_switcher.dart";
-import "../../../auth/presentation/widgets/drop_down_widget.dart";
 
 
 class ProfilePage extends ConsumerWidget {
@@ -173,78 +171,174 @@ class ProfilePage extends ConsumerWidget {
               ),
 
               /// header
-
               SizedBox(height: 12.h,),
               const NotificationSwitcher(),
-              SizedBox(height: 12.h,),
+              SizedBox(height: 16.h,),
 
-              /// Moshina
+              /// general settings
               Text(
-                "Moshinani tanlang",
-                style: TextStyle(
-                  fontSize: 14.sp,
-                  color: context.theme.colorScheme.primary,
-                  fontWeight: FontWeight.w500,
+                "Umumiy",
+                style: Theme.of(context)
+                    .textTheme
+                    .titleMedium
+                    ?.copyWith(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 16.sp, fontFamily: "Poppins"),
+              ),
+              SizedBox(height: 20.h,),
+              MaterialButton(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                onPressed: (){
+                  GoRouter.of(context).go("${AppRouteName.profilePage}/${AppRouteName.settings_profile}");
+                },
+                child: Row(
+                  children: <Widget>[
+                    SvgPicture.asset(Assets.iconsRegisterUser),
+                    SizedBox(width: 10.w,),
+                    Text(
+                      "Mening ma’lumotlarim",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleMedium
+                          ?.copyWith(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16.sp, fontFamily: "Poppins"),
+                    ),
+                    const Spacer(),
+                    SvgPicture.asset(Assets.iconsKeyboardRight),
+                  ],
                 ),
               ),
-              SizedBox(height: 10.h),
-              DropdownBtn(
-                dropDownListItems: const <String>["Cobolt", "Spark", "Nexia 3", "Gentra", "Boshqa"],
-                prefixIcon: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: SvgPicture.asset(Assets.iconsCar),
+              MaterialButton(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                onPressed: (){
+                  GoRouter.of(context).go("${AppRouteName.profilePage}/${AppRouteName.settings_appearance}");
+                },
+                child: Row(
+                  children: <Widget>[
+                    SvgPicture.asset(Assets.iconsDisplay),
+                    SizedBox(width: 10.w,),
+                    Text(
+                      "Dastur ko’rinishi",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleMedium
+                          ?.copyWith(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16.sp, fontFamily: "Poppins"),
+                    ),
+                    const Spacer(),
+                    SvgPicture.asset(Assets.iconsKeyboardRight),
+                  ],
                 ),
               ),
-              SizedBox(height: 20.h),
+              MaterialButton(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                onPressed: (){
+                  GoRouter.of(context).go("${AppRouteName.profilePage}/${AppRouteName.settings_car}");
+                },
+                child: Row(
+                  children: <Widget>[
+                    SvgPicture.asset(Assets.iconsCar),
+                    SizedBox(width: 10.w,),
+                    Text(
+                      "Mening moshinam",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleMedium
+                          ?.copyWith(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16.sp, fontFamily: "Poppins"),
+                    ),
+                    const Spacer(),
+                    SvgPicture.asset(Assets.iconsKeyboardRight),
+                  ],
+                ),
+              ),
 
-              /// Moshina raqami
-              Text(
-                "Moshina raqamini kiriting",
-                style: TextStyle(
-                  fontSize: 14.sp,
-                  color: context.theme.colorScheme.primary,
-                  fontWeight: FontWeight.w500,
+              /// da line
+              SizedBox(height: 10.h,),
+              Container(
+                height: 1,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: contextColor.primaryContainer.withOpacity(0.4),
                 ),
               ),
-              SizedBox(height: 10.h),
-              TextFormField(
-                textInputAction: TextInputAction.done,
-                inputFormatters: <TextInputFormatter>[
-                  MaskedInputFormatter("## # ### ##"),
-                ],
-                decoration: InputDecoration(
-                  contentPadding: EdgeInsets.symmetric(vertical: 2.h),
-                  prefixIcon: Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: SvgPicture.asset(Assets.iconsUzIcon),
-                  ),
-                  filled: true,
-                  fillColor: context.theme.colorScheme.onPrimaryContainer,
-                  hintText: "01 A 123 NN",
-                  hintStyle: const TextStyle(fontWeight: FontWeight.w600),
-                  border: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
-              SizedBox(height: 20.h),
 
-              /// Konditsioner
+              /// general settings
+              SizedBox(height: 20.h,),
               Text(
-                "Konditsioner",
-                style: TextStyle(
-                  fontSize: 14.sp,
-                  color: context.theme.colorScheme.primary,
-                  fontWeight: FontWeight.w500,
+                "Yordam",
+                style: Theme.of(context)
+                    .textTheme
+                    .titleMedium
+                    ?.copyWith(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 16.sp, fontFamily: "Poppins"),
+              ),
+              SizedBox(height: 20.h,),
+              MaterialButton(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                onPressed: (){},
+                child: Row(
+                  children: <Widget>[
+                    SvgPicture.asset(Assets.iconsWarning),
+                    SizedBox(width: 10.w,),
+                    Text(
+                      "Shikoyat qilish",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleMedium
+                          ?.copyWith(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16.sp, fontFamily: "Poppins"),
+                    ),
+                    const Spacer(),
+                    SvgPicture.asset(Assets.iconsKeyboardRight),
+                  ],
                 ),
               ),
-              SizedBox(height: 10.h),
-              DropdownBtn(
-                dropDownListItems: const <String>["Bor", "Yo'q"],
-                prefixIcon: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: SvgPicture.asset(Assets.iconsAirConditioner),
+              MaterialButton(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                onPressed: (){},
+                child: Row(
+                  children: <Widget>[
+                    SvgPicture.asset(Assets.iconsBlackQueston, height: 28,),
+                    SizedBox(width: 10.w,),
+                    Text(
+                      "FAQ",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleMedium
+                          ?.copyWith(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16.sp, fontFamily: "Poppins"),
+                    ),
+                    const Spacer(),
+                    SvgPicture.asset(Assets.iconsKeyboardRight),
+                  ],
+                ),
+              ),
+              MaterialButton(
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                onPressed: (){},
+                child: Row(
+                  children: <Widget>[
+                    SvgPicture.asset(Assets.iconsStop),
+                    SizedBox(width: 10.w,),
+                    Text(
+                      "Xavfsizlik va qoidalar",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleMedium
+                          ?.copyWith(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16.sp, fontFamily: "Poppins"),
+                    ),
+                    const Spacer(),
+                    SvgPicture.asset(Assets.iconsKeyboardRight),
+                  ],
                 ),
               ),
             ],

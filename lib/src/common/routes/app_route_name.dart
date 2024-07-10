@@ -15,9 +15,9 @@ final class AppRouteName {
 
   // profile
   static const String profilePage = "/profile_page";
-  static const String settings_car = "/settings_car";
-  static const String settings_appearance = "/settings_appearance";
-  static const String settings_profile = "/settings_profile";
+  static const String settings_car = "settings_car";
+  static const String settings_appearance = "settings_appearance";
+  static const String settings_profile = "settings_profile";
 
   // history
   static const String historyPage = "/history_page";
