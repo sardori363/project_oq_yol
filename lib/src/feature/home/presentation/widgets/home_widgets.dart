@@ -8,7 +8,6 @@ import "package:url_launcher/url_launcher.dart";
 import "../../../../../generated/assets.dart";
 import "../../../../common/utils/extensions/context_extensions.dart";
 import "../../../../common/widget/common used widgets/notification_switcher.dart";
-import "../../view_model/home_vm.dart";
 
 class PassengerGenerator extends ConsumerWidget {
   const PassengerGenerator({super.key});
@@ -18,6 +17,7 @@ class PassengerGenerator extends ConsumerWidget {
     final ColorScheme contextColor = context.theme.colorScheme;
     return ListView.builder(
       itemCount: 10,
+      padding: const EdgeInsets.only(top: 10),
       physics: const BouncingScrollPhysics(),
       itemBuilder: (BuildContext context, int index) {
         return index != 0
@@ -279,8 +279,8 @@ class PostageGenerator extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final ColorScheme contextColor = context.theme.colorScheme;
-    final HomeVM con = ref.watch(homeVM);
     return ListView.builder(
+      padding: EdgeInsets.only(top: 10.h),
       itemCount: 10,
       physics: const BouncingScrollPhysics(),
       itemBuilder: (BuildContext context, int index) {

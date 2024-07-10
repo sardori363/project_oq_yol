@@ -8,8 +8,13 @@ class HomeVM with ChangeNotifier {
   bool isPassengers = true;
   bool isNotificationOn = true;
 
-  void changePassengers(){
-    isPassengers = !isPassengers;
+  void switchToPassengers(){
+    isPassengers = true;
+    notifyListeners();
+  }
+
+  void switchToPostage(){
+    isPassengers = false;
     notifyListeners();
   }
 

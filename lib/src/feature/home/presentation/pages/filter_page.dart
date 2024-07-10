@@ -72,7 +72,7 @@ class _FilterPageState extends ConsumerState<FilterPage> {
                         color: con.isPassengers ? contextColor.primary : Colors.transparent,
                       ),
                       child: TextButton(
-                        onPressed: con.changePassengers,
+                        onPressed: con.switchToPassengers,
                         style: TextButton.styleFrom(
                           backgroundColor: Colors.transparent,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
@@ -117,7 +117,7 @@ class _FilterPageState extends ConsumerState<FilterPage> {
                         color: !con.isPassengers ? contextColor.primary : Colors.transparent,
                       ),
                       child: TextButton(
-                        onPressed: con.changePassengers,
+                        onPressed: con.switchToPostage,
                         style: TextButton.styleFrom(
                           backgroundColor: Colors.transparent,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),

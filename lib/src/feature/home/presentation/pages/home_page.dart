@@ -70,7 +70,7 @@ class HomePage extends ConsumerWidget {
               children: <Widget>[
                 TextButton(
                   onPressed: () {
-                    con.changePassengers();
+                    con.switchToPassengers();
                   },
                   style: TextButton.styleFrom(
                     minimumSize: Size(120.w, 40.h),
@@ -93,7 +93,7 @@ class HomePage extends ConsumerWidget {
                 ),
                 TextButton(
                   onPressed: () {
-                    con.changePassengers();
+                    con.switchToPostage();
                   },
                   style: TextButton.styleFrom(
                     minimumSize: Size(120.w, 40.h),

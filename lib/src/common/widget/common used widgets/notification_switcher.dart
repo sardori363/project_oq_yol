@@ -6,7 +6,6 @@ import "package:flutter_svg/svg.dart";
 
 import "../../../../generated/assets.dart";
 import "../../../feature/home/view_model/home_vm.dart";
-import "../../utils/extensions/context_extensions.dart";
 
 class NotificationSwitcher extends ConsumerWidget {
   const NotificationSwitcher({super.key});
