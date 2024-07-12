@@ -1,4 +1,4 @@
-package com.pdp.ecosystem.invest.pdp_invest
+package com.oq.yol.project.oq_yol
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 

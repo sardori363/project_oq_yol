@@ -19,14 +19,9 @@ dependencies:
   flutter_screenutil: ^5.9.0
   flutter_svg: ^2.0.10+1
   image_picker: ^1.1.1
-  lottie: ^3.1.2
-  bulleted_list: ^0.0.1+0.1a
 
   # for slides
   carousel_slider: ^4.2.1
-
-  # circular percentage indicator
-  percent_indicator: ^4.2.3
 
   #Utils
   device_preview: ^1.1.0
@@ -35,8 +30,6 @@ dependencies:
   intl_phone_field: ^3.1.0
   smooth_page_indicator: ^1.1.0
   mask_text_input_formatter: ^2.9.0
-  easy_stepper: ^0.8.4
-#  google_fonts: ^6.2.1
 
   #for locale storage
   flutter_secure_storage: ^9.0.0
@@ -55,11 +48,11 @@ dependencies:
   dio: ^5.4.1
   connectivity_plus: ^6.0.3
 
-  # firebase
-  firebase_core: ^2.25.5
-  firebase_crashlytics: ^3.5.5
-  firebase_analytics: ^10.10.5
-  firebase_remote_config: ^4.4.5
+#  # firebase
+#  firebase_core: ^2.25.5
+#  firebase_crashlytics: ^3.5.5
+#  firebase_analytics: ^10.10.5
+#  firebase_remote_config: ^4.4.5
 
   #for navigation
   go_router: ^14.1.1
@@ -75,15 +68,6 @@ dependencies:
 
   #for youtube video
 #  youtube_player_flutter: ^9.0.1
-
-  #for view:
-  webview_flutter: ^4.7.0
-  webview_flutter_wkwebview: ^3.13.1
-  webview_flutter_android: ^3.16.4
-
-  #for pdf files
-  syncfusion_flutter_pdfviewer: ^24.2.8
-  flutter_windowmanager: ^0.2.0
 
   easy_rich_text: ^2.1.0
   flutter_multi_formatter: ^2.12.8
